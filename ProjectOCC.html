@@ -1,0 +1,119 @@
+<style>
+    .good{
+        background-color: green;
+    }
+    .warning{
+        background-color: yellow;
+    }
+    .bad{
+        background-color: red;
+    }
+    body{
+        background-color: black;
+    }
+    a {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    h1 {
+        text-align: center;
+
+    }
+    table{
+        width: 100%;
+        height : 70%;
+    }
+
+    .boy{
+        border-color: black;
+        background-color: green; 
+
+    }
+
+    .girl{
+        border-color: black;
+        background-color: red;
+
+    }
+
+    td {
+        border-width: 5px;
+        border-style: solid;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .barcontainer{
+        background-color: #181818;
+        position: relative;
+        transform: translateY(-50%);
+        top: 50%;
+        margin-left: 50px;
+        width: 50px;
+        height: 100%;
+        float: left;
+    }
+    .bar{
+        background-color: #9BC9C7;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80%;
+        border-top: 6px solid #FFF;
+        box-sizing: border-box;
+        animation: grow 1.5s ease-out forwards;
+        transform-origin: bottom;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<body style="background-color: black;">
+<table>
+    <tr>
+        <td class="boy">
+            <div class="boy">Boys 2-4</div>
+            <br>
+            <num id="B2">||B2||</num>
+        </td>
+        <td class="boy">
+            <div class="warning">Boys 5-9</div>
+            <br>
+            <num id="B5">||B5||</num>
+        </td>
+        <td class="boy">
+            <div class="bad">Boys 10-14</div>
+            <br>
+            <num id="B10">||B10||</num>
+        </td>
+    </tr>
+    <tr>
+        <td class="girl">
+            Girls 2-4
+            <br>
+            <num id="G2">||G2||</num>
+        </td>
+        <td class="girl">
+            Girls 5-9
+            <br>
+            <num id="G5">||G5||</num>
+        </td>
+        <td class="girl">
+            Girls 10-14
+            <br>
+            <num id="G10">||G10||</num>
+        </td>
+    </tr>
+</table>
+<br>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%"></div>
+</div>
+</body>
+<!-- <script>
+setTimeout(function(){
+   window.location.reload(1);
+}, 1000);
+</script> -->
