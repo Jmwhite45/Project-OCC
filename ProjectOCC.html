@@ -1,49 +1,35 @@
 <style>
-    .good{
-        background-color: green;
-    }
-    .warning{
-        background-color: yellow;
-    }
-    .bad{
-        background-color: red;
-    }
-    body{
-        background-color: black;
-    }
     a {
         text-align: center;
         font-weight: bold;
         font-size: 30px;
     }
-
     h1 {
         text-align: center;
 
     }
     table{
         width: 100%;
-        height : 70%;
+        height: 90%;
     }
 
     .boy{
-        border-color: black;
-        background-color: green; 
-
+        background-color: #3dc51b; 
     }
 
     .girl{
-        border-color: black;
-        background-color: red;
-
+        background-color: #ff1414;
     }
 
     td {
         border-width: 5px;
         border-style: solid;
+        border-color: black;
         text-align: center;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 50px;
+        width: 640px;
+        height: 360px;
     }
     .barcontainer{
         background-color: #181818;
@@ -51,7 +37,7 @@
         transform: translateY(-50%);
         top: 50%;
         margin-left: 50px;
-        width: 50px;
+        width: 200px;
         height: 100%;
         float: left;
     }
@@ -66,41 +52,68 @@
         animation: grow 1.5s ease-out forwards;
         transform-origin: bottom;
     }
+    box{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+    }
+    .B{
+        top: 5px
+    }
+    .G{
+        top:489px;
+    }
+    .two{
+        left: 5px;
+    }
+    .five{
+        left: 643px;
+    }
+    .ten{
+        left: 1282px;
+    }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-<body style="background-color: black;">
+<body style=" background-color: black">
 <table>
     <tr>
         <td class="boy">
-            <div class="boy">Boys 2-4</div>
+            <box class = "B two" style="background-color: ||B2-color||;"></box>
+            Boys 2-4
             <br>
             <num id="B2">||B2||</num>
         </td>
         <td class="boy">
-            <div class="warning">Boys 5-9</div>
+            <box class = "B five" style="background-color: ||B5-color||;"></box>
+            Boys 5-9
             <br>
             <num id="B5">||B5||</num>
         </td>
         <td class="boy">
-            <div class="bad">Boys 10-14</div>
+            <box class = "B ten" style="background-color: ||B10-color||;"></box>
+            Boys 10-14
             <br>
-            <num id="B10">||B10||</num>
+            <num id="B10">||B10||</num><sup>(1)</sup>
         </td>
     </tr>
     <tr>
         <td class="girl">
+            <box class = "G two" style="background-color: ||G2-color||;"></box>
             Girls 2-4
             <br>
             <num id="G2">||G2||</num>
         </td>
         <td class="girl">
+            <box class = "G five" style="background-color: ||G5-color||;"></box>
             Girls 5-9
             <br>
             <num id="G5">||G5||</num>
         </td>
         <td class="girl">
+            <box class = "G ten" style="background-color: ||G10-color||;"></box>
             Girls 10-14
             <br>
             <num id="G10">||G10||</num>
@@ -109,11 +122,11 @@
 </table>
 <br>
 <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%"></div>
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: ||Goal||%"></div>
 </div>
 </body>
-<!-- <script>
-setTimeout(function(){
-   window.location.reload(1);
-}, 1000);
-</script> -->
+<script>
+ setTimeout(function(){
+    window.location.reload(1);
+ }, 1000);
+</script>
